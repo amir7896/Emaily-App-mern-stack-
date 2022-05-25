@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Mern Stack E-Maily App",
+  "main": "server.js",
+  "engines": {
+    "npm": "8.5.0",
+    "node": "16.14.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook \"",
+    "webhook": "lt -p 5000 -s kldfjgsdflgj"
+  },
+  "keywords": [],
+  "author": "Amir Shahzad Bhutta",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "http-proxy-middleware": "^2.0.4",
+    "localtunnel": "^2.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.9",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0",
+    "path-parser": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "sendgrid": "^5.2.3",
+    "stripe": "^8.215.0"
+  }
+}
